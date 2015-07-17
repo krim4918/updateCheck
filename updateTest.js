@@ -1,3 +1,7 @@
+var sdcard=android.os.Environment.getExternalStorageDirectory();
+var File=java.io.File;
+var directory=new File(sdcard.getAbsolutePath()+"/games/com.mojang");
+
 function readHtml(url) {
         try{
 		var read=new java.io.ByteArrayOutputStream();
@@ -56,10 +60,10 @@ p(e);//에러
 
 
 var getVersion = readHtml("https://raw.githubusercontent.com/krim4918/updateCheck/master/README.md");
-var Version = 1.2;
+var Version = 1.3;
 function newLevel(){
 	if (Version < getVersion){
-		download(https://raw.githubusercontent.com/krim4918/updateCheck/master/updateTest.js , sdcard+"/rpg", "/autoUpdate");
+		download("https://raw.githubusercontent.com/krim4918/updateCheck/master/updateTest.js" , sdcard+"/rpg", "/autoUpdate");
 	}
 }
 
