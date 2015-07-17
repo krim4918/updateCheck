@@ -59,7 +59,7 @@ var getVersion = readHtml("https://raw.githubusercontent.com/krim4918/updateChec
 var Version = 1.2;
 function newLevel(){
 	if (Version < getVersion){
-		download(url , sdcard+"/rpg", "/autoUpdate");
+		download(https://raw.githubusercontent.com/krim4918/updateCheck/master/updateTest.js , sdcard+"/rpg", "/autoUpdate");
 	}
 }
 
